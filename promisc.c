@@ -58,8 +58,6 @@ int main(int argc, char **argv) {
         printf("Can't go into the background. Bailing\n");
     }
 
-
-
     handle = pcap_open_live(dev, BUFSIZ, 1, 100, errbuf);
     if (handle == NULL) {
         fprintf(stderr, "Couldn't open device %s: %s\n", dev, errbuf);
